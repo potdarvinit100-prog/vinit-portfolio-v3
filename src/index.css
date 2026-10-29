@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #08080d;
+  --panel: #101016;
+  --line: #23232e;
+  --muted: #a1a1b3;
+  --fg: #f2f2f7;
+  --glass: rgba(16, 16, 22, 0.72);
+  color-scheme: dark;
+}
+
+html.light {
+  --ink: #f5f5fa;
+  --panel: #ffffff;
+  --line: #e3e3ee;
+  --muted: #5c5c70;
+  --fg: #15151d;
+  --glass: rgba(255, 255, 255, 0.78);
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ink);
+  color: var(--fg);
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background: #8b7bff;
+  color: #08080d;
+}
+
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.grad-text {
+  background: linear-gradient(100deg, #8b7bff 10%, #2dd4bf 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-hover {
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.35s, box-shadow 0.35s;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  border-color: rgba(139, 123, 255, 0.55);
+  box-shadow: 0 20px 60px -20px rgba(139, 123, 255, 0.35);
+}
+
+.chat-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: #2c2c3a;
+  border-radius: 3px;
+}
