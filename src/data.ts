@@ -12,10 +12,6 @@ export const profile = {
   instagram: "https://instagram.com/_yrrr_vinit",
   cv: "/Vinit-Potdar-CV.pdf",
   startup: {
-    name: "VAYN",
-    line: "Building VAYN with a global team of ambitious developers.",
-  },
-  startupNow: {
     name: "LegacyShift AI",
     line: "Building LegacyShift AI — legacy code, modernised safely.",
   },
@@ -206,11 +202,6 @@ export interface KBChunk {
 }
 
 export const knowledgeBase: KBChunk[] = [
-  {
-    id: "vayn",
-    keywords: ["vayn", "startup", "founder", "company", "team", "building"],
-    text: "Vinit is building VAYN with a global team of ambitious developers — a startup with international ambitions.",
-  },
   {
     id: "legacyshift",
     keywords: ["legacyshift", "startup", "cto", "co-founder", "cofounder", "currently building", "building now"],
