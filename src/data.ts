@@ -1,7 +1,7 @@
 export const profile = {
   name: "Vinit Niranjan Potdar",
   shortName: "Vinit Potdar",
-  roles: ["Co-founder & CTO", "Software Engineer", "Full-Stack Developer", "AI Engineer"],
+  roles: ["Software Engineer", "Full-Stack Developer", "AI Engineer"],
   tagline:
     "I build full-stack platforms and AI systems end to end — from first idea to production.",
   location: "Pune, India · Open to remote worldwide",
@@ -165,8 +165,8 @@ export const education = [
 
 export const achievements = [
   {
-    title: "Harvard Aspire Leaders Program",
-    detail: "Leadership certificate through the Aspire Institute.",
+    title: "Selected for Harvard Aspire Leaders Program",
+    detail: "Selected for the Aspire Leaders Program (Aspire Institute) — leadership certificate.",
   },
   {
     title: "4× 1st Rank — Project Exhibitions",
@@ -204,13 +204,13 @@ export interface KBChunk {
 export const knowledgeBase: KBChunk[] = [
   {
     id: "legacyshift",
-    keywords: ["legacyshift", "startup", "cto", "co-founder", "cofounder", "currently building", "building now"],
-    text: "Vinit is Co-founder & CTO of LegacyShift AI, a product that modernises legacy code safely. He is building it as a final-year Computer Engineering student from Pune, India.",
+    keywords: ["legacyshift", "startup", "currently building", "building now"],
+    text: "Vinit is building LegacyShift AI, a product that modernises legacy code safely. He is building it as a final-year Computer Engineering student from Pune, India.",
   },
   {
     id: "bio",
     keywords: ["who", "about", "vinit", "introduce", "background", "summary"],
-    text: "Vinit Niranjan Potdar is a Software Engineer, Full-Stack Developer and AI Engineer from Pune, India. He is Co-founder & CTO of LegacyShift AI, and a final-year Computer Engineering student who builds full-stack platforms and AI systems end to end, and he is open to remote work worldwide.",
+    text: "Vinit Niranjan Potdar is a Software Engineer, Full-Stack Developer and AI Engineer from Pune, India. He is a final-year Computer Engineering student who builds full-stack platforms and AI systems end to end, and he is open to remote work worldwide.",
   },
   {
     id: "skills",

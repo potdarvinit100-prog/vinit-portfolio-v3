@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 256" role="img" aria-label="LegacyShift">
+  <rect width="256" height="256" rx="56" fill="#F1F5F9"/>
+  <path d="M32 192 Q80 168 114 134" fill="none" stroke="#94A3B8" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 14"/>
+  <path d="M142 122 Q184 92 220 62" fill="none" stroke="#06B6D4" stroke-width="8" stroke-linecap="round"/>
+  <path d="M220 62 L196 66 L212 84 Z" fill="#06B6D4"/>
+  <circle cx="128" cy="128" r="30" fill="#5B5BD6"/>
+  <text x="128" y="128" text-anchor="middle" dominant-baseline="central" font-family="DejaVu Sans Mono, monospace" font-size="22" font-weight="700" fill="#FFFFFF">&lt;/&gt;</text>
+  <text x="288" y="152" font-family="Inter, system-ui, -apple-system, Segoe UI, sans-serif" font-size="92" font-weight="800" letter-spacing="-2" fill="#FFFFFF">Legacy<tspan fill="#67E8F9">Shift</tspan></text>
+</svg>

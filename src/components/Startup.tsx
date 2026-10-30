@@ -15,16 +15,18 @@ export default function Startup() {
               <p className="flex items-center gap-2 text-accent2 text-sm font-medium tracking-[0.25em] uppercase mb-4">
                 <Rocket size={16} /> Currently building
               </p>
-              <h2 className="font-display font-bold text-4xl md:text-6xl tracking-tight mb-4">
-                <span className="grad-text">{startup.name}</span>
-              </h2>
+              <img
+                src="/legacyshift-logo.svg"
+                alt="LegacyShift AI"
+                className="h-16 md:h-20 w-auto mb-4"
+              />
               <p className="text-lg text-muted max-w-2xl mb-8">{startup.line}</p>
               <div className="flex flex-wrap gap-4">
                 <span className="flex items-center gap-2 text-sm border border-line rounded-full px-4 py-2 text-muted">
-                  <Users size={15} className="text-accent" /> Co-founder & CTO
+                  <Users size={15} className="text-accent" /> Global team
                 </span>
                 <span className="flex items-center gap-2 text-sm border border-line rounded-full px-4 py-2 text-muted">
-                  <Globe2 size={15} className="text-accent2" /> YC Winter 2027 application in preparation
+                  <Globe2 size={15} className="text-accent2" /> International ambitions
                 </span>
               </div>
             </div>
