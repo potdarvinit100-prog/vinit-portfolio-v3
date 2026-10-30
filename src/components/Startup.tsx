@@ -21,7 +21,7 @@ export default function Startup() {
               <p className="text-lg text-muted max-w-2xl mb-8">{startup.line}</p>
               <div className="flex flex-wrap gap-4">
                 <span className="flex items-center gap-2 text-sm border border-line rounded-full px-4 py-2 text-muted">
-                  <Users size={15} className="text-accent" /> Global team
+                  <Users size={15} className="text-accent" /> Founder-led team
                 </span>
                 <span className="flex items-center gap-2 text-sm border border-line rounded-full px-4 py-2 text-muted">
                   <Globe2 size={15} className="text-accent2" /> International ambitions

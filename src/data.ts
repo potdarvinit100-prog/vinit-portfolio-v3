@@ -1,7 +1,7 @@
 export const profile = {
   name: "Vinit Niranjan Potdar",
   shortName: "Vinit Potdar",
-  roles: ["Software Engineer", "Full-Stack Developer", "AI Engineer"],
+  roles: ["Co-founder & CTO", "Software Engineer", "Full-Stack Developer", "AI Engineer"],
   tagline:
     "I build full-stack platforms and AI systems end to end — from first idea to production.",
   location: "Pune, India · Open to remote worldwide",
@@ -12,8 +12,8 @@ export const profile = {
   instagram: "https://instagram.com/_yrrr_vinit",
   cv: "/Vinit-Potdar-CV.pdf",
   startup: {
-    name: "VAYN",
-    line: "Building VAYN with a global team of ambitious developers.",
+    name: "LegacyShift AI",
+    line: "Building LegacyShift AI — legacy code, modernised safely.",
   },
 };
 
@@ -30,6 +30,7 @@ export interface Project {
   description: string;
   tech: string[];
   metrics: string[];
+  repo?: string;
 }
 
 export const projects: Project[] = [
@@ -64,6 +65,65 @@ export const projects: Project[] = [
       "Production-style platform: Express backend with 17 REST routes, Supabase PostgreSQL with row-level security, and Ava — a Vapi voice agent that answers calls, retrieves answers from a knowledge base, checks live availability and books appointments. Analytics dashboard plus n8n workflows for confirmations and alerts.",
     tech: ["Express", "Supabase", "Vapi", "React", "n8n"],
     metrics: ["17 REST routes", "Voice AI"],
+  },
+];
+
+/* Latest pushed builds — real-time apps, live data, honest error states.
+   Source on GitHub; no live demo is claimed for these (repo links only). */
+export const latestBuilds: Project[] = [
+  {
+    name: "Breathe India",
+    tagline: "Live air quality across India",
+    description:
+      "Live PM2.5, PM10 and US AQI plus weather for 8 Indian cities from Open-Meteo, refreshing every 5 minutes. Shows its data source and last-updated time, with an honest error state when the feed fails.",
+    tech: ["JavaScript", "Open-Meteo API", "AQI"],
+    metrics: ["Live data", "8 cities"],
+    repo: "https://github.com/potdarvinit100-prog/breathe-india",
+  },
+  {
+    name: "Quake Watch",
+    tagline: "Global earthquakes, last 24 hours",
+    description:
+      "Global earthquake feed from USGS, with minimum-magnitude filters and a 5-minute refresh. Shows its data source and last-updated time, with an honest error state when the feed fails.",
+    tech: ["JavaScript", "USGS API"],
+    metrics: ["Live data", "24h feed"],
+    repo: "https://github.com/potdarvinit100-prog/quake-watch",
+  },
+  {
+    name: "Coin Pulse",
+    tagline: "Crypto prices in USD + INR",
+    description:
+      "BTC, ETH, SOL, DOGE and XRP in USD and INR with 24h change, plus per-coin target-price alerts kept in the browser, from CoinGecko with a 60-second refresh.",
+    tech: ["JavaScript", "CoinGecko API"],
+    metrics: ["Live data", "Price alerts"],
+    repo: "https://github.com/potdarvinit100-prog/coin-pulse",
+  },
+  {
+    name: "FX Alert",
+    tagline: "Currency converter + rate alerts",
+    description:
+      "Converter and rate alerts for USD, EUR, GBP and INR from the Frankfurter API, refreshing every 10 minutes. AED is deliberately not offered — the ECB-based rate list has no dirham.",
+    tech: ["JavaScript", "Frankfurter API"],
+    metrics: ["Live data", "Rate alerts"],
+    repo: "https://github.com/potdarvinit100-prog/fx-alert",
+  },
+  {
+    name: "Trending Now",
+    tagline: "Trending GitHub repos, last 7 days",
+    description:
+      "Repositories created in the last 7 days ranked by stars, with a language filter, from the GitHub Search API with a 10-minute refresh. Notes the unauthenticated 60 requests/hour limit honestly.",
+    tech: ["JavaScript", "GitHub API"],
+    metrics: ["Live data", "7-day window"],
+    repo: "https://github.com/potdarvinit100-prog/trending-now",
+  },
+  {
+    name: "Remote Board",
+    tagline: "Remote jobs, live or snapshot",
+    description:
+      "Remote job listings that try the live RemoteOK feed first and fall back to a dated snapshot of real listings, always labelled LIVE or SNAPSHOT with its date — never presented as live when it is not.",
+    tech: ["JavaScript", "RemoteOK API"],
+    metrics: ["Live first", "Labelled fallback"],
+    repo: "https://github.com/potdarvinit100-prog/remote-board",
   },
 ];
 
@@ -154,9 +214,14 @@ export const knowledgeBase: KBChunk[] = [
     text: "Vinit is building VAYN with a global team of ambitious developers — a startup with international ambitions.",
   },
   {
+    id: "legacyshift",
+    keywords: ["legacyshift", "startup", "cto", "co-founder", "cofounder", "currently building", "building now"],
+    text: "Vinit is Co-founder & CTO of LegacyShift AI, a product that modernises legacy code safely. He is building it as a final-year Computer Engineering student from Pune, India.",
+  },
+  {
     id: "bio",
     keywords: ["who", "about", "vinit", "introduce", "background", "summary"],
-    text: "Vinit Niranjan Potdar is a Software Engineer, Full-Stack Developer and AI Engineer from Pune, India. He is a final-year Computer Engineering student who builds full-stack platforms and AI systems end to end, and he is open to remote work worldwide.",
+    text: "Vinit Niranjan Potdar is a Software Engineer, Full-Stack Developer and AI Engineer from Pune, India. He is Co-founder & CTO of LegacyShift AI, and a final-year Computer Engineering student who builds full-stack platforms and AI systems end to end, and he is open to remote work worldwide.",
   },
   {
     id: "skills",
