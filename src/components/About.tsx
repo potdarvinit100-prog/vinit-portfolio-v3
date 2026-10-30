@@ -22,7 +22,7 @@ export default function About() {
               RAG pipelines, vector embeddings, ML/NLP, and voice agents.
             </p>
             <p className="text-muted leading-relaxed mb-4">
-              Since 2023 I've freelanced as a full-stack developer, delivering{" "}
+              Since 2023 I've built and shipped{" "}
               <span className="text-fg font-medium">20+ applications</span>{" "}
               end to end — scoping, building, deploying, and iterating directly
               with clients. I don't do tutorials; I ship production-style

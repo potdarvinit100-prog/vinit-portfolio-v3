@@ -12,6 +12,10 @@ export const profile = {
   instagram: "https://instagram.com/_yrrr_vinit",
   cv: "/Vinit-Potdar-CV.pdf",
   startup: {
+    name: "VAYN",
+    line: "Building VAYN with a global team of ambitious developers.",
+  },
+  startupNow: {
     name: "LegacyShift AI",
     line: "Building LegacyShift AI — legacy code, modernised safely.",
   },
@@ -129,16 +133,6 @@ export const latestBuilds: Project[] = [
 
 export const experience = [
   {
-    title: "Freelance Full-Stack Developer",
-    org: "Self-employed",
-    period: "2023 — Present",
-    points: [
-      "Delivered 20+ applications end to end — including government projects: requirements, UI, backend APIs, deployment, handover.",
-      "Work directly with clients across industries, owning products from idea to production.",
-      "Stack: Java/Spring Boot, React, TypeScript, Python, REST APIs, MySQL/MongoDB.",
-    ],
-  },
-  {
     title: "Backend Developer",
     org: "Contract — Agency Client",
     period: "Nov 2025 — Mar 2026",
@@ -187,8 +181,12 @@ export const achievements = [
     detail: "Winner of Avishkar in 2025.",
   },
   {
-    title: "Hackathons",
-    detail: "Active participant across hackathons and build competitions.",
+    title: "Datathon 3rd Rank — Kaggle",
+    detail: "3rd place in the Kaggle battery-health Datathon with team Super intelligence.",
+  },
+  {
+    title: "3× Hackathon Winner",
+    detail: "Winner across three hackathons and build competitions.",
   },
 ];
 
@@ -251,7 +249,7 @@ export const knowledgeBase: KBChunk[] = [
   {
     id: "experience",
     keywords: ["experience", "work", "freelance", "job", "client", "applications delivered", "agency", "dream technology", "intern"],
-    text: "Vinit has worked as a freelance full-stack developer since 2023, delivering 20+ applications end to end — including government projects. He also served as a Backend Developer on contract for an agency client (Nov 2025 — Mar 2026) and as a Full Stack Developer Intern at Dream Technology (Jan–Apr 2023, remote).",
+    text: "Vinit served as a Backend Developer on contract for an agency client (Nov 2025 — Mar 2026) and as a Full Stack Developer Intern at Dream Technology (Jan–Apr 2023, remote).",
   },
   {
     id: "education",

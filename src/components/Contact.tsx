@@ -23,8 +23,8 @@ export default function Contact() {
             Let's build something <span className="grad-text">great</span>
           </h2>
           <p className="text-muted max-w-xl mx-auto mb-10">
-            Open to remote engineering roles worldwide, freelance builds, and
-            collaborations. My inbox is always open.
+            Open to remote engineering roles worldwide and collaborations.
+            My inbox is always open.
           </p>
         </Reveal>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
