@@ -1,4 +1,4 @@
-import { Rocket, Globe2, Users } from "lucide-react";
+import { Rocket } from "lucide-react";
 import Reveal from "./Reveal";
 import { profile } from "../data";
 
@@ -16,19 +16,11 @@ export default function Startup() {
                 <Rocket size={16} /> Currently building
               </p>
               <img
-                src="/legacyshift-logo.svg"
-                alt="LegacyShift AI"
-                className="h-16 md:h-20 w-auto mb-4"
+                src="/legacyshift-banner.jpg"
+                alt="LegacyShift AI — Legacy code, modernized safely."
+                className="w-full max-w-xl h-auto rounded-lg mb-8"
               />
-              <p className="text-lg text-muted max-w-2xl mb-8">{startup.line}</p>
-              <div className="flex flex-wrap gap-4">
-                <span className="flex items-center gap-2 text-sm border border-line rounded-full px-4 py-2 text-muted">
-                  <Users size={15} className="text-accent" /> Global team
-                </span>
-                <span className="flex items-center gap-2 text-sm border border-line rounded-full px-4 py-2 text-muted">
-                  <Globe2 size={15} className="text-accent2" /> International ambitions
-                </span>
-              </div>
+              <p className="text-lg text-muted max-w-2xl">{startup.line}</p>
             </div>
           </div>
         </Reveal>
