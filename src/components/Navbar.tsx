@@ -9,8 +9,9 @@ const links = [
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "TPC", href: "#tpc" },
-  { label: "Education", href: "#education" },
   { label: "Achievements", href: "#achievements" },
+  { label: "Education", href: "#education" },
+  { label: "Profiles", href: "#profiles" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -35,7 +36,7 @@ export default function Navbar() {
           <span className="grad-text font-bold">VP</span>
           <span className="text-muted font-normal">.dev</span>
         </a>
-        <div className="hidden md:flex items-center gap-7">
+        <div className="hidden md:flex items-center gap-5 lg:gap-7">
           {links.map((l) => (
             <a
               key={l.href}

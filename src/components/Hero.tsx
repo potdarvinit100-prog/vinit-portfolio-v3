@@ -1,6 +1,6 @@
 import { motion, type Variants } from "motion/react";
-import { ArrowDown, Eye, Mail } from "lucide-react";
-import { LinkedInIcon } from "./icons";
+import { ArrowDown, Download, Mail } from "lucide-react";
+import { LinkedInIcon, GitHubIcon } from "./icons";
 import BlackHoleHero from "./BlackHoleHero";
 import { profile } from "../data";
 
@@ -60,13 +60,12 @@ export default function Hero() {
         >
           <motion.a
             href={profile.cv}
-            target="_blank"
-            rel="noreferrer"
+            download
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.96 }}
             className="flex items-center gap-2 bg-accent text-ink font-semibold px-7 py-3 rounded-full hover:opacity-90 transition-opacity"
           >
-            <Eye size={17} /> View CV
+            <Download size={17} /> Download CV
           </motion.a>
           <motion.a
             href="#contact"
@@ -75,6 +74,16 @@ export default function Hero() {
             className="flex items-center gap-2 border border-line px-7 py-3 rounded-full hover:border-accent transition-colors"
           >
             <Mail size={17} /> Get in touch
+          </motion.a>
+          <motion.a
+            href={profile.github}
+            target="_blank"
+            rel="noreferrer"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.96 }}
+            className="flex items-center gap-2 border border-line px-7 py-3 rounded-full hover:border-accent transition-colors"
+          >
+            <GitHubIcon size={17} /> GitHub
           </motion.a>
           <motion.a
             href={profile.linkedin}

@@ -101,6 +101,22 @@ export const projects: Project[] = [
       "n8n workflows for confirmations and alerts",
     ],
   },
+  {
+    name: "Vinit's Friend — Portfolio Assistant",
+    tagline: "On-site assistant for this portfolio",
+    description:
+      "Objective: let visitors get answers about Vinit's work without reading every section. The problem: a portfolio's details are spread across many sections, and visitors often have one specific question. Vinit built the assistant that runs on this site: it answers questions about his projects, skills, experience, education, achievements and contact details from a curated knowledge base, using keyword-overlap retrieval to pick the most relevant answers and composing them into replies with a streaming display. His contribution: designed and built the assistant end to end, including the knowledge base, retrieval scoring, and chat interface. Note: retrieval is keyword-based over a curated knowledge base, not embedding-based RAG.",
+    tech: ["React", "TypeScript", "Keyword Retrieval", "Curated Knowledge Base"],
+    metrics: ["Live on this site", "Streaming replies"],
+    features: [
+      "Answers from a curated knowledge base",
+      "Keyword-overlap retrieval scoring",
+      "Top answers composed into replies",
+      "Streaming reply display",
+      "Suggestion prompts and CV shortcut",
+    ],
+    repo: "https://github.com/potdarvinit100-prog/vinit-portfolio-v3",
+  },
 ];
 
 /* Latest pushed builds — real-time apps, live data, honest error states.
@@ -245,14 +261,13 @@ export const achievements: Achievement[] = [
 
 export const skills: Record<string, string[]> = {
   "Programming Languages": ["Java", "Python", "TypeScript", "JavaScript", "SQL"],
-  Frontend: ["React.js", "Next.js", "Tailwind CSS", "WebSockets"],
-  Backend: ["Node.js", "REST APIs", "Microservices", "GraphQL"],
-  Frameworks: ["Spring Boot", "Express", "FastAPI", "Flask"],
+  "Frontend Development": ["React.js", "Next.js", "Tailwind CSS", "WebSockets"],
+  "Backend Development": ["Node.js", "Spring Boot", "Express", "FastAPI", "Flask", "REST APIs", "Microservices", "GraphQL"],
   Databases: ["MySQL", "Oracle", "MongoDB", "Supabase", "Redis"],
-  "AI / ML": ["scikit-learn", "NLTK", "OpenCV"],
-  "Generative AI": ["RAG", "Vector Embeddings", "LangChain", "OpenAI APIs", "LLM patterns", "Vapi voice AI"],
-  Cloud: ["AWS", "Vercel"],
-  "Developer Tools": ["Git", "Docker", "CI/CD", "n8n"],
+  "AI and Generative AI": ["scikit-learn", "NLTK", "OpenCV", "OpenAI APIs", "Vapi voice AI"],
+  "RAG and LLM Technologies": ["RAG", "Vector Embeddings", "LangChain", "LLM patterns"],
+  "Developer Tools and Platforms": ["Git", "Docker", "CI/CD", "n8n"],
+  "Cloud and Deployment": ["AWS", "Vercel"],
 };
 
 export const tpc = {
@@ -326,6 +341,11 @@ export const knowledgeBase: KBChunk[] = [
     id: "tpc",
     keywords: ["tpc", "placement", "training", "placement cell"],
     text: "Vinit has engaged with his college Training & Placement Cell (ISBM College of Engineering, Pune) around placements and job applications. No member or coordinator title is claimed for this engagement.",
+  },
+  {
+    id: "assistant",
+    keywords: ["assistant", "friend", "chatbot", "chat", "ask"],
+    text: "Vinit's Friend is the assistant on this portfolio: it answers questions about Vinit's projects, skills, experience, education, achievements and contact details from a curated knowledge base, using keyword retrieval to pick the most relevant answers. It runs on this site and its code is in the vinit-portfolio-v3 repository.",
   },
   {
     id: "contact",

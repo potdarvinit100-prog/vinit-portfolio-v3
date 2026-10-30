@@ -14,7 +14,7 @@ export default function Projects() {
             Industry-grade <span className="grad-text">builds</span>
           </h2>
           <p className="text-muted max-w-2xl mb-12">
-            Four production-style systems — real pipelines, real data, real
+            Production-style systems — real pipelines, real data, real
             verification. No toy demos.
           </p>
         </Reveal>
