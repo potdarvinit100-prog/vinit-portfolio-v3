@@ -1,10 +1,10 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Check } from "lucide-react";
 import Reveal from "./Reveal";
 import { projects, latestBuilds } from "../data";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 bg-panel/40 scroll-mt-16">
+    <section id="projects" className="py-24 scroll-mt-16">
       <div className="max-w-6xl mx-auto px-5">
         <Reveal>
           <p className="text-accent2 text-sm font-medium tracking-[0.25em] uppercase mb-3">
@@ -29,10 +29,20 @@ export default function Projects() {
                   </div>
                   <ArrowUpRight size={20} className="text-muted shrink-0 mt-1" />
                 </div>
-                <p className="text-muted text-sm leading-relaxed mb-5 flex-1">
+                <p className="text-muted text-sm leading-relaxed mb-5">
                   {p.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mb-4">
+                {p.features && (
+                  <ul className="space-y-2 mb-5">
+                    {p.features.map((f) => (
+                      <li key={f} className="flex gap-2 text-sm text-muted">
+                        <Check size={15} className="text-accent2 shrink-0 mt-0.5" />
+                        {f}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                <div className="flex flex-wrap gap-2 mb-4 mt-auto">
                   {p.metrics.map((m) => (
                     <span
                       key={m}

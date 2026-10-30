@@ -2,6 +2,7 @@ export const profile = {
   name: "Vinit Niranjan Potdar",
   shortName: "Vinit Potdar",
   roles: ["Software Engineer", "Full-Stack Developer", "AI Engineer"],
+  github: "https://github.com/potdarvinit100-prog",
   tagline:
     "I build full-stack platforms and AI systems end to end — from first idea to production.",
   location: "Pune, India · Open to remote worldwide",
@@ -24,12 +25,20 @@ export const stats = [
   { value: "97.35%", label: "Best model accuracy" },
 ];
 
+export const aboutParagraphs = [
+  "I'm Vinit Potdar, a final-year Computer Engineering student from Pune, India, and a full-stack developer working across Java/Spring Boot, React, TypeScript and Python — and deep into AI, from RAG pipelines and vector embeddings to ML/NLP and voice agents.",
+  "My journey started with building: since 2023 I've shipped 20+ applications end to end — scoping, building, deploying and iterating directly with clients — alongside a full-stack internship at Dream Technology and contract backend work for an agency client. I don't do tutorials; I ship production-style systems with real users and real data.",
+  "What interests me most is AI that solves a real problem: triaging bugs before they pile up, reading disease signals out of clinical text, answering a business's calls when no human can. I build the whole loop — backend APIs, data, retrieval, and the interface — so the system works in production, not just in a demo.",
+  "Right now I'm building LegacyShift AI — legacy code, modernised safely — while staying open to remote engineering roles worldwide, where I can keep shipping full-stack platforms and AI systems end to end.",
+];
+
 export interface Project {
   name: string;
   tagline: string;
   description: string;
   tech: string[];
   metrics: string[];
+  features?: string[];
   repo?: string;
 }
 
@@ -38,33 +47,59 @@ export const projects: Project[] = [
     name: "E-commerce Platform",
     tagline: "Full-stack online store",
     description:
-      "Complete e-commerce product built end to end: Spring Boot REST APIs powering a React storefront — product catalog with search, cart and checkout flow, order management, JWT-based authentication, and an admin dashboard. MySQL persistence, deployed and handed over as a working product.",
+      "Objective: a complete, working online store a real business can run on. The problem: selling online needs more than a catalogue — it needs search, a reliable cart and checkout, order handling, secure accounts and an admin view, all working together. Vinit built it end to end: Spring Boot REST APIs powering a React storefront, with MySQL persistence, and handed it over as a working product. His contribution: sole end-to-end builder, from API design to storefront to deployment and handover.",
     tech: ["Java", "Spring Boot", "React", "MySQL", "JWT", "REST API"],
     metrics: ["Full product flow", "Secure auth", "Admin dashboard"],
+    features: [
+      "Product catalogue with search",
+      "Cart and checkout flow",
+      "Order management",
+      "JWT-based authentication",
+      "Admin dashboard",
+    ],
   },
   {
     name: "BugSense",
     tagline: "AI-powered bug tracker",
     description:
-      "n8n workflow automation auto-triages incoming issues the moment they are filed; a RAG pipeline over vector embeddings semantically matches new issues against past resolved bugs to suggest fixes. Retrieval architecture over real data.",
+      "Objective: stop bug reports piling up untriaged, and stop teams re-solving the same bug. The problem: incoming issues need sorting fast, and past fixes are often lost in old tickets. Vinit built an AI-powered bug tracker: n8n workflow automation auto-triages incoming issues the moment they are filed, and a RAG pipeline over vector embeddings semantically matches new issues against past resolved bugs to suggest fixes. His contribution: designed and built the triage automation and the retrieval pipeline over real data.",
     tech: ["n8n", "RAG", "Vector Embeddings", "Python", "LangChain"],
     metrics: ["Auto-triage", "Semantic matching"],
+    features: [
+      "Auto-triage the moment an issue is filed",
+      "Semantic matching against resolved bugs",
+      "Fix suggestions drawn from past tickets",
+      "Retrieval architecture over real data",
+    ],
   },
   {
     name: "HMPV Disease Detection",
     tagline: "ML / NLP disease detection",
     description:
-      "NLP-based symptom extraction from clinical reports with NLTK; trained Random Forest, SVM, and XGBoost classifiers. End-to-end ML pipeline: data cleaning with Pandas, model training and evaluation with scikit-learn, served through a Flask + MySQL backend.",
+      "Objective: support faster, data-driven disease detection from clinical text. The problem: clinical reports hold symptom information in unstructured language that is hard to analyse at scale. Vinit built an ML/NLP system: NLP-based symptom extraction from clinical reports with NLTK, trained Random Forest, SVM, and XGBoost classifiers, and an end-to-end pipeline — data cleaning with Pandas, model training and evaluation with scikit-learn, served through a Flask + MySQL backend. His contribution: built the full pipeline from text extraction to trained, evaluated models and backend serving.",
     tech: ["Python", "scikit-learn", "NLTK", "Flask", "MySQL"],
     metrics: ["97.35% test accuracy"],
+    features: [
+      "NLP symptom extraction with NLTK",
+      "Random Forest, SVM and XGBoost classifiers",
+      "End-to-end ML pipeline with scikit-learn",
+      "Flask + MySQL backend serving",
+    ],
   },
   {
     name: "Voxa AI Receptionist",
     tagline: "AI voice receptionist platform",
     description:
-      "Production-style platform: Express backend with 17 REST routes, Supabase PostgreSQL with row-level security, and Ava — a Vapi voice agent that answers calls, retrieves answers from a knowledge base, checks live availability and books appointments. Analytics dashboard plus n8n workflows for confirmations and alerts.",
+      "Objective: let a business answer every call, even when no human receptionist is available. The problem: missed calls mean missed appointments, and a receptionist needs live knowledge and live availability at call time. Vinit built a production-style AI voice receptionist platform: an Express backend with 17 REST routes, Supabase PostgreSQL with row-level security, and Ava — a Vapi voice agent that answers calls, retrieves answers from a knowledge base, checks live availability and books appointments — plus an analytics dashboard and n8n workflows for confirmations and alerts. His contribution: built the platform end to end, from backend routes and data security to the voice agent and dashboard.",
     tech: ["Express", "Supabase", "Vapi", "React", "n8n"],
     metrics: ["17 REST routes", "Voice AI"],
+    features: [
+      "Ava voice agent answering live calls",
+      "Knowledge-base answers during calls",
+      "Live availability checks and booking",
+      "Analytics dashboard",
+      "n8n workflows for confirmations and alerts",
+    ],
   },
 ];
 
@@ -153,17 +188,35 @@ export const education = [
     degree: "B.E. Computer Engineering",
     school: "ISBM College of Engineering, Pune",
     period: "2024 — 2027",
-    detail: "",
+    detail: "Final-year B.E. student. Current SGPA 9.57 (SGPA, not CGPA).",
   },
   {
     degree: "Diploma in Computer Engineering",
-    school: "",
+    school: "Government Polytechnic, Solapur",
     period: "2021 — 2024",
-    detail: "84%",
+    detail: "84%.",
+  },
+  {
+    degree: "SSC",
+    school: "Jawahar Vidyalaya",
+    period: "",
+    detail: "95.20%.",
   },
 ];
 
-export const achievements = [
+export interface Achievement {
+  title: string;
+  detail: string;
+  spotlight?: boolean;
+}
+
+export const achievements: Achievement[] = [
+  {
+    title: "Prakaram Idea Pitching Competition — RUNNER-UP",
+    detail:
+      "Runner-up at the Prakaram Idea Pitching Competition, recognised for a compelling idea pitch delivered with clarity, structure and conviction.",
+    spotlight: true,
+  },
   {
     title: "Selected for Harvard Aspire Leaders Program",
     detail: "Selected for the Aspire Leaders Program (Aspire Institute) — leadership certificate.",
@@ -184,14 +237,31 @@ export const achievements = [
     title: "3× Hackathon Winner",
     detail: "Winner across three hackathons and build competitions.",
   },
+  {
+    title: "Forage — AWS Simulation",
+    detail: "Completed the Forage AWS simulation.",
+  },
 ];
 
 export const skills: Record<string, string[]> = {
-  Languages: ["Java", "Python", "TypeScript", "JavaScript", "SQL"],
-  Backend: ["Spring Boot", "REST APIs", "Microservices", "GraphQL", "Node.js", "Express", "FastAPI", "Flask", "n8n"],
+  "Programming Languages": ["Java", "Python", "TypeScript", "JavaScript", "SQL"],
   Frontend: ["React.js", "Next.js", "Tailwind CSS", "WebSockets"],
-  "AI / ML": ["RAG", "Vector Embeddings", "LangChain", "OpenAI APIs", "scikit-learn", "NLTK", "OpenCV", "Vapi voice AI"],
-  "Data & Infra": ["MySQL", "Oracle", "MongoDB", "Supabase", "Git", "Docker", "AWS", "CI/CD", "Redis", "Vercel"],
+  Backend: ["Node.js", "REST APIs", "Microservices", "GraphQL"],
+  Frameworks: ["Spring Boot", "Express", "FastAPI", "Flask"],
+  Databases: ["MySQL", "Oracle", "MongoDB", "Supabase", "Redis"],
+  "AI / ML": ["scikit-learn", "NLTK", "OpenCV"],
+  "Generative AI": ["RAG", "Vector Embeddings", "LangChain", "OpenAI APIs", "LLM patterns", "Vapi voice AI"],
+  Cloud: ["AWS", "Vercel"],
+  "Developer Tools": ["Git", "Docker", "CI/CD", "n8n"],
+};
+
+export const tpc = {
+  org: "ISBM College of Engineering, Pune",
+  points: [
+    "Engaged with the college Training & Placement Cell around placements and job applications.",
+    "Prepared for placement processes and tracked job applications through the cell's placement engagement.",
+    "Pursued remote and India-based engineering opportunities through placement-cell channels.",
+  ],
 };
 
 /* ---------- Vinit's Friend knowledge base ---------- */
@@ -215,7 +285,7 @@ export const knowledgeBase: KBChunk[] = [
   {
     id: "skills",
     keywords: ["skill", "stack", "tech", "technology", "language", "framework", "tools"],
-    text: "Vinit's stack: Java, Python, TypeScript, JavaScript, SQL; Spring Boot, REST APIs, microservices, GraphQL, Node.js, Express, FastAPI, Flask, n8n automation; React.js, Next.js, Tailwind CSS, WebSockets; RAG, vector embeddings, LangChain, OpenAI APIs, scikit-learn, NLTK, OpenCV, Vapi voice AI; MySQL, Oracle, MongoDB, Supabase, Git, Docker, AWS, CI/CD, Redis, Vercel.",
+    text: "Vinit's stack: Java, Python, TypeScript, JavaScript, SQL; Spring Boot, REST APIs, microservices, GraphQL, Node.js, Express, FastAPI, Flask, n8n automation; React.js, Next.js, Tailwind CSS, WebSockets; RAG, vector embeddings, LangChain, OpenAI APIs, LLM patterns, scikit-learn, NLTK, OpenCV, Vapi voice AI; MySQL, Oracle, MongoDB, Supabase, Redis, Git, Docker, AWS, CI/CD, Vercel.",
   },
   {
     id: "ecommerce",
@@ -239,23 +309,28 @@ export const knowledgeBase: KBChunk[] = [
   },
   {
     id: "experience",
-    keywords: ["experience", "work", "freelance", "job", "client", "applications delivered", "agency", "dream technology", "intern"],
+    keywords: ["experience", "work", "job", "client", "applications delivered", "agency", "dream technology", "intern"],
     text: "Vinit served as a Backend Developer on contract for an agency client (Nov 2025 — Mar 2026) and as a Full Stack Developer Intern at Dream Technology (Jan–Apr 2023, remote).",
   },
   {
     id: "education",
     keywords: ["education", "college", "degree", "study", "university"],
-    text: "Vinit is pursuing a B.E. in Computer Engineering at ISBM College of Engineering, Pune (2024–2027). He completed a Diploma in Computer Engineering (2021–2024) with 84%.",
+    text: "Vinit is pursuing a B.E. in Computer Engineering at ISBM College of Engineering, Pune (2024–2027), current SGPA 9.57 (SGPA, not CGPA). He completed a Diploma in Computer Engineering at Government Polytechnic, Solapur (2021–2024) with 84%, and his SSC at Jawahar Vidyalaya with 95.20%.",
   },
   {
     id: "achievements",
-    keywords: ["achievement", "award", "certificate", "harvard", "avishkar", "rank", "hackathon", "exhibition"],
-    text: "Vinit's achievements: leadership certificate from the Harvard Aspire Leaders Program (Aspire Institute); 1st rank four times in project exhibitions; Winner of Avishkar 2025; active hackathon participant.",
+    keywords: ["achievement", "award", "certificate", "harvard", "avishkar", "rank", "hackathon", "exhibition", "prakaram"],
+    text: "Vinit's achievements: Runner-up at the Prakaram Idea Pitching Competition; leadership certificate from the Harvard Aspire Leaders Program (Aspire Institute); 1st rank four times in project exhibitions; Winner of Avishkar 2025; 3rd place in the Kaggle battery-health Datathon with team Super intelligence; winner across three hackathons; completed the Forage AWS simulation.",
+  },
+  {
+    id: "tpc",
+    keywords: ["tpc", "placement", "training", "placement cell"],
+    text: "Vinit has engaged with his college Training & Placement Cell (ISBM College of Engineering, Pune) around placements and job applications. No member or coordinator title is claimed for this engagement.",
   },
   {
     id: "contact",
     keywords: ["contact", "email", "phone", "linkedin", "telegram", "instagram", "reach", "hire"],
-    text: "You can reach Vinit at potdarvinit077@gmail.com or +91 8262920550. LinkedIn: linkedin.com/in/vinit-potdar-1314a9332. Telegram: hello_vinitt. Instagram: _yrrr_vinit.",
+    text: "You can reach Vinit at potdarvinit077@gmail.com or +91 8262920550. LinkedIn: linkedin.com/in/vinit-potdar-1314a9332. Telegram: hello_vinitt. Instagram: _yrrr_vinit. GitHub: github.com/potdarvinit100-prog.",
   },
   {
     id: "availability",

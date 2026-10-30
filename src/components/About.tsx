@@ -1,5 +1,5 @@
 import Reveal from "./Reveal";
-import { profile, stats, skills } from "../data";
+import { stats, aboutParagraphs } from "../data";
 
 export default function About() {
   return (
@@ -13,29 +13,27 @@ export default function About() {
             Builder first, <span className="grad-text">always shipping</span>
           </h2>
         </Reveal>
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-10 items-start">
           <Reveal delay={100}>
-            <p className="text-muted leading-relaxed mb-4">
-              I'm {profile.shortName}, a final-year Computer Engineering student
-              from Pune, India. I work across the full stack —
-              Java/Spring Boot, React, TypeScript, Python — and deep into AI:
-              RAG pipelines, vector embeddings, ML/NLP, and voice agents.
-            </p>
-            <p className="text-muted leading-relaxed mb-4">
-              Since 2023 I've built and shipped{" "}
-              <span className="text-fg font-medium">20+ applications</span>{" "}
-              end to end — scoping, building, deploying, and iterating directly
-              with clients. I don't do tutorials; I ship production-style
-              systems with real users and real data.
-            </p>
-            <p className="text-muted leading-relaxed">
-              Currently open to remote engineering roles worldwide.
-            </p>
+            <div className="space-y-4">
+              {aboutParagraphs.map((p, i) => (
+                <p key={i} className="text-muted leading-relaxed">
+                  {p}
+                </p>
+              ))}
+              <p className="text-muted leading-relaxed">
+                Currently open to{" "}
+                <span className="text-fg font-medium">
+                  remote engineering roles worldwide
+                </span>
+                .
+              </p>
+            </div>
           </Reveal>
           <div className="grid grid-cols-2 gap-4">
             {stats.map((s, i) => (
               <Reveal key={s.label} delay={i * 90}>
-                <div className="bg-panel border border-line rounded-2xl p-6 card-hover">
+                <div className="bg-panel border border-line rounded-2xl p-6 card-hover h-full">
                   <p className="font-display font-bold text-3xl grad-text mb-1">
                     {s.value}
                   </p>
@@ -45,30 +43,6 @@ export default function About() {
             ))}
           </div>
         </div>
-        <Reveal delay={120}>
-          <div className="mt-12 bg-panel border border-line rounded-2xl p-6 md:p-8">
-            <h3 className="font-display font-semibold text-lg mb-5">Technical arsenal</h3>
-            <div className="space-y-4">
-              {Object.entries(skills).map(([group, items]) => (
-                <div key={group} className="flex flex-col sm:flex-row sm:items-start gap-2">
-                  <span className="text-sm font-semibold text-accent2 w-32 shrink-0">
-                    {group}
-                  </span>
-                  <div className="flex flex-wrap gap-2">
-                    {items.map((s) => (
-                      <span
-                        key={s}
-                        className="text-xs bg-ink border border-line rounded-full px-3 py-1 text-muted"
-                      >
-                        {s}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Reveal>
       </div>
     </section>
   );

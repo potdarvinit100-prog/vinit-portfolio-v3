@@ -2,8 +2,11 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Startup from "./components/Startup";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
+import TPC from "./components/TPC";
+import Education from "./components/Education";
 import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
 import Assistant from "./components/Assistant";
@@ -17,8 +20,11 @@ export default function App() {
         <Hero />
         <Startup />
         <About />
+        <Skills />
         <Projects />
         <Experience />
+        <TPC />
+        <Education />
         <Achievements />
         <Contact />
       </main>
