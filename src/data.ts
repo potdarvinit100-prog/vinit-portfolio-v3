@@ -180,12 +180,11 @@ export const latestBuilds: Project[] = [
 
 export const experience = [
   {
-    title: "Backend Developer",
-    org: "Contract — Agency Client",
-    period: "Nov 2025 — Mar 2026",
+    title: "Co-founder",
+    org: "LegacyShift AI",
+    period: "Sept 2026 — Present",
     points: [
-      "Served as backend developer for an agency client; built and shipped backend systems and production APIs.",
-      "Delivered production backend features in a distributed team workflow.",
+      "Building LegacyShift AI, a product for modernizing legacy code safely, with Sahil Sah.",
     ],
   },
   {
@@ -193,8 +192,7 @@ export const experience = [
     org: "Dream Technology",
     period: "Jan 2023 — Apr 2023",
     points: [
-      "Full-stack development internship, working remotely with a global team.",
-      "Built and shipped web features across frontend and backend.",
+      "Full-stack internship with a global remote team; built and shipped web features across frontend and backend.",
     ],
   },
 ];
